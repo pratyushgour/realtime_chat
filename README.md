@@ -1,68 +1,113 @@
 # realtime_chat
-Real-Time Chat Website with MERN Stack, Socket.io, Redux Toolkit, and Tailwind CSS
+# Real-Time Chat Website (MERN Stack, Socket.io, Redux Toolkit, Tailwind CSS)
 
-This is a real-time chat website that allows users to connect with each other and chat in real-time. It was built using the MERN stack (MongoDB, Express.js, React.js, and Node.js), Socket.io, Redux Toolkit, and Tailwind CSS.
+## Overview
+This is a real-time chat application that enables users to connect and chat in real-time. It is built using the MERN stack (MongoDB, Express.js, React.js, and Node.js), along with Socket.io for real-time communication, Redux Toolkit for state management, and Tailwind CSS for styling.
 
-If you liked it then give this Repository a Star⭐
-Youtube Demo : Click On Me
-Technologies Used
+## 🔥 Features
+- **Real-time Chat:** Users can send and receive messages instantly.
+- **User Authentication:** Sign up, log in, and log out using JWT and Google Authentication.
+- **Group Chat:** Users can create chat rooms and invite others to join.
+- **Notifications:** Receive notifications on new messages.
+- **Emojis Support:** Send and receive emojis in messages.
+- **User Profile:** Users can update their avatar and display name.
+- **Search Functionality:** Find users and chat rooms easily.
+- **Responsive Design:** Optimized for different screen sizes and devices.
 
-MERN stack (MongoDB, Express.js, React.js, and Node.js)
-Socket.io
-Redux Toolkit
-Tailwind CSS
-Features
+## 🚀 Technologies Used
+- MERN Stack (MongoDB, Express.js, React.js, Node.js)
+- Socket.io (Real-time communication)
+- Redux Toolkit (State management)
+- Tailwind CSS (UI Styling)
 
-Real-time chat: users can send and receive messages in real-time
-User authentication: users can sign up, log in, and log out using JWT and Google Auth
-Group creation: users can create chat rooms and invite others to join
-Notifications: users can receive notifications on new messages
-Emojis: users can send and receive emojis in messages
-Profile page where users can update their avatar and display name.
-Users can create a room to chat with others.
-Search functionality.
-Responsive design: the website is optimized for different screen sizes and devices
-Configuration and Setup
+## 🎥 Demo
+**[Watch the Demo on YouTube](#)**
 
-In order to run this project locally, simply fork and clone the repository or download as zip and unzip on your machine.
+## 🛠 Configuration and Setup
+To run this project locally, follow these steps:
 
-Open the project in your prefered code editor.
-Go to terminal -> New terminal (If you are using VS code)
-Split your terminal into two (run the client on one terminal and the server on the other terminal)
-In the first terminal
+### 1️⃣ Clone the Repository
+```sh
+$ git clone https://github.com/your-username/repository-name.git
+$ cd repository-name
+```
 
-cd client and create a .env file in the root of your client directory.
-Supply the following credentials
-REACT_APP_GOOGLE_CLIENT_ID = 
-REACT_APP_SERVER_URL='http://localhost:8000'
-To get your Google ClientID for authentication, go to the credential Page (if you are new, then create a new project first and follow the following steps;
-
-Click Create credentials > OAuth client ID.
-Select the Web application type.
-Name your OAuth client and click Create
-Remember to provide your domain and redirect URL so that Google identifies the origin domain to which it can display the consent screen. In development, that is going to be http://localhost:3000 and http://localhost:3000/login
-Copy the Client ID and assign it to the variable REACT_APP_GOOGLE_CLIENT_ID in your .env file
+### 2️⃣ Setup Client
+```sh
 $ cd client
-$ npm install (to install client-side dependencies)
-$ npm start (to start the client)
-In the second terminal
+$ npm install
+```
+#### Create `.env` file in `client` directory and add:
+```sh
+REACT_APP_GOOGLE_CLIENT_ID=<your_google_client_id>
+REACT_APP_SERVER_URL='http://localhost:8000'
+```
+#### Start Client
+```sh
+$ npm start
+```
 
-cd server and create a .env file in the root of your server directory.
-Supply the following credentials
-PORT=8000
-URL=
-SECRET=
-CLIENT_ID=
-BASE_URL="http://localhost:3000"
+### 3️⃣ Setup Server
+```sh
 $ cd server
-$ npm install (to install server-side dependencies)
-& npm start (to start the server)
-Contributing
+$ npm install
+```
+#### Create `.env` file in `server` directory and add:
+```sh
+PORT=8000
+URL=<your_mongodb_connection_url>
+SECRET=<your_jwt_secret>
+CLIENT_ID=<your_google_client_id>
+BASE_URL='http://localhost:3000'
+```
+#### Start Server
+```sh
+$ npm start
+```
 
-Contributions to this project are welcome! If you find a bug or want to add a feature, please submit an issue or a pull request. To contribute, follow these steps:
+## 🤝 Contributing
+Contributions are welcome! To contribute:
+1. **Fork the Repository**
+2. **Create a New Branch**
+   ```sh
+   $ git checkout -b feature-branch
+   ```
+3. **Make Changes & Commit**
+   ```sh
+   $ git commit -m 'Add new feature'
+   ```
+4. **Push the Branch**
+   ```sh
+   $ git push origin feature-branch
+   ```
+5. **Open a Pull Request**
 
-Fork the repository
-Create a new branch for your feature: git checkout -b my-new-feature
-Make changes and commit them: git commit -m 'Add some feature'
-Push your branch to your forked repository: git push origin my-new-feature
-Create a Pull Request
+## 📜 License
+This project is licensed under the MIT License.
+
+## 🌎 About
+A real-time messaging application that allows users to chat in real-time. It leverages the MERN stack for the backend and frontend, Socket.IO for real-time communication, Redux Toolkit for state management, and Tailwind CSS for styling.
+
+## 🔗 Live Demo
+**[talk-time.netlify.app](https://talk-time.netlify.app)**
+
+## 📌 Topics
+`react` `redux` `nodejs` `express` `mongodb` `reactjs` `socket-io` `mern` `chat-application` `real-time-messaging` `mern-stack` `chat-website` `redux-toolkit`
+
+## 💡 Contributors
+- **[@ShakirFarhan](https://github.com/ShakirFarhan)**
+- **[@nrishav007](https://github.com/nrishav007)**
+
+## 📊 Repository Stats
+- ⭐ **167 Stars**
+- 👀 **5 Watchers**
+- 🍴 **64 Forks**
+
+## 🏷 Languages Used
+- **JavaScript**: 96.7%
+- **HTML**: 2.7%
+- **CSS**: 0.6%
+
+---
+Give this repository a ⭐ if you found it useful!
+
